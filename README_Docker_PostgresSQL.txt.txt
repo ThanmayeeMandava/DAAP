@@ -1,6 +1,3 @@
-README.txt
-=================
-
 This document provides instructions on how to set up and run MongoDB and PostgreSQL using Docker containers.
 
 Docker Setup Instructions:
@@ -32,7 +29,3 @@ PostgreSQL Instruction:
 -----------------------
 
 1. Create one New Database in PostgreSQL
-	- Name: Group_O
-
-
-
