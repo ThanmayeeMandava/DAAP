@@ -1,0 +1,13 @@
+{
+    "_comment": " Please Enter your mongoDB and postgres credientials here.",
+    "mongo": {
+      "uri": "mongodb://dap:dap@localhost:27017/"
+    },
+    "postgres": {                   
+      "dbname": "drugs_DB",
+      "user": "postgres",
+      "password": "root",
+      "host": "127.0.0.1",
+      "port": "5432"
+    }
+  }

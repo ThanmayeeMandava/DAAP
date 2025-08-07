@@ -1,0 +1,16 @@
+{
+    "mongodb": {
+        "username": "dap",
+        "password": "dap",
+        "host": "localhost",
+        "port": "27017",
+        "database": "final_drugs_DB"
+    },
+    "postgresql": {
+        "username": "postgres",
+        "password": "root",
+        "host": "127.0.0.1",
+        "port": "5432",
+        "database": "postgres"
+    }
+}

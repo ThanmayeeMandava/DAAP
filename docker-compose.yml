@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: dap
+      MONGO_INITDB_ROOT_PASSWORD: dap
+      MONGO_INITDB_DATABASE: Group_O
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    restart: unless-stopped
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    env_file:
+      - postgresql.env  # Use environment variables from an external file
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  dbdata:

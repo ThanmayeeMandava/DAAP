@@ -1,0 +1,15 @@
+name: etl
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - plotly
+  - cassandra-driver
+  - dagster
+  - dagster-pandas
+  - dagit
+  - pandas
+  - pendulum<3.0
+  - psycopg2
+  - pymongo
+  - sqlalchemy

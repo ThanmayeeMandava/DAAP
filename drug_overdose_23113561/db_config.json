@@ -1,0 +1,16 @@
+{
+  "mongodb": {
+    "username": "dap",
+    "password": "dap",
+    "host": "localhost",
+    "port": 27017,
+    "database": "Group_O"
+  },
+  "postgresql": {
+    "username": "postgres",
+    "password": "root",
+    "host": "localhost",
+    "port": 5432,
+    "database": "Group_O"
+  }
+}
